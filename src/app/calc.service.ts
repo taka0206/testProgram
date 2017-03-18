@@ -1,7 +1,10 @@
+// 必要なクラスなどをインポートする.
 import {Injectable} from "@angular/core";
 import {StoreService} from "./store.service";
 
+// DI可能クラスであることを宣言する
 @Injectable()
+// 計算サービスの定義
 export class CalcService {
 
     constructor(private storeService: StoreService) { //StoreService DI

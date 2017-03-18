@@ -20,7 +20,7 @@ import {CounterService} from "./counter.service";
     imports: [  //外部@NgModuleで定義されたモジュール
         BrowserModule,
         FormsModule,
-        RouterModule.forRoot(ROUTES)
+        RouterModule.forRoot(ROUTES) // main.component.tsで記述したルート定義が登録されている
     ],
     providers: [ //DIするサービス
         CalcService,

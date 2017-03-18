@@ -1,3 +1,4 @@
+// 必要なクラスなどをインポート
 import {
     Component,
     OnChanges,
@@ -15,6 +16,9 @@ import {StoreService} from "./store.service";
     selector: "page02",
     template: `
       <p>コンポーネント（2/2）</p>
+      <!-- {{式 | パイプ}}は式の値をパイプで処理した後、文字列に変換する -->
+      <!-- readStoreメソッドから取得した値をAngular2に標準内蔵されたDecimalPipeを使い、3桁ごとにカンマで区切られた値に変換する -->
+      <!-- パイプは独自に作成することもできる -->
       <p>前ページの金額　{{readStore() | number}}</p>
       <p><a routerLink="/">1ページ目へ</a></p>
 `,
